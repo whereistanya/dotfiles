@@ -1,0 +1,5 @@
+XTerm*foreground: white
+XTerm*background: black
+XTerm*ScrollBar: true
+XTerm*Scrollbar*width: 6
+Xterm*SaveLines: 5000
