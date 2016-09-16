@@ -9,10 +9,12 @@ import XMonad.Hooks.DynamicLog
 import XMonad.Hooks.ManageDocks
 import XMonad.Util.Run(spawnPipe)
 import XMonad.Util.EZConfig(additionalKeys)
+import XMonad.Hooks.SetWMName
 import XMonad.Layout.Combo
 import XMonad.Layout.ThreeColumns
 import XMonad.Layout.TwoPane
 import XMonad.Layout.ResizableTile
+import Graphics.X11.ExtraTypes.XF86
 import System.IO
 
 myManageHook = composeAll
@@ -39,10 +41,13 @@ main = do
                         { ppOutput = hPutStrLn xmproc
                         , ppTitle = xmobarColor "green" "" . shorten 50
                         }
+        , startupHook = setWMName "LG3D"  -- this makes android studio work </noideadog>
         , terminal = "xterm"
         }
         `additionalKeys`
         [ ((0, xK_F7), spawn "/usr/bin/gnome-screensaver-command -a")
-        , ((0, xK_F8), spawn "/usr/bin/google-chrome")
-        ]
-
+        , ((0, xK_F8), spawn "/usr/bin/chromium-browser")
+        , ((0, 0x1008FF12), spawn "/home/tanya/pulse-volume.sh toggle")
+        , ((0, 0x1008FF13), spawn "/home/tanya/pulse-volume.sh increase")
+        , ((0, 0x1008FF11), spawn "/home/tanya/pulse-volume.sh decrease")
+       ]
