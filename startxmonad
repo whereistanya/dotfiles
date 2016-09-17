@@ -6,7 +6,7 @@ if [ -x /usr/bin/nm-applet ] ; then
    (sleep 1; nm-applet &)
 fi
 
-/usr/bin/redshift-gtk >/home/tanya/poop  2>&1 &
+/usr/bin/redshift-gtk &
 
 /usr/bin/autocutsel -fork & /usr/bin/autocutsel -selection PRIMARY -fork &
 
