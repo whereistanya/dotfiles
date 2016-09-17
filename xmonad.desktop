@@ -1,6 +1,6 @@
 [Desktop Entry]
 Name=XMonad
 Comment=Lightweight tiling window manager
-Exec=/home/tanya/startxmonad
+Exec=/home/${USER}/startxmonad
 Icon=xmonad.png
 Type=XSession
