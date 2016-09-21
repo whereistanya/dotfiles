@@ -51,4 +51,6 @@ main = do
         , ((0, 0x1008FF12), spawn "/home/tanya/pulse-volume.sh toggle")
         , ((0, 0x1008FF13), spawn "/home/tanya/pulse-volume.sh increase")
         , ((0, 0x1008FF11), spawn "/home/tanya/pulse-volume.sh decrease")
+        , ((0, xF86XK_MonBrightnessUp), spawn "xbacklight +20")
+        , ((0, xF86XK_MonBrightnessDown), spawn "xbacklight -20")
        ]
