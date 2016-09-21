@@ -2,13 +2,16 @@ Configs for an xmonad setup on Ubuntu.
 
 ## Install 
 
-xmonad: a beautiful tiling window manager that stays out of your way
-xmobar: a simple status bar
-trayer: a system tray you can put things in
-redshift-gtk: colour temperature adjuster
-autocutset: keep the X clipboard and the cutbuffer in sync
+* xmonad: a beautiful tiling window manager that stays out of your way
+* xmobar: a simple status bar
+* trayer: a system tray you can put things in
+* redshift-gtk: colour temperature adjuster
+* autocutset: keep the X clipboard and the cutbuffer in sync
+* xbacklight: for changing the screen brightness
 
-## Put configs at:
+I also use pulsevolume.sh from https://github.com/bchurchill/xmonad-pulsevolume for adjusting volume.
+
+## Put configs in place:
 
 /usr/share/xsessions/xmonad.desktop
 ~/startxmonad
