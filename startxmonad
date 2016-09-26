@@ -6,6 +6,8 @@ if [ -x /usr/bin/nm-applet ] ; then
    (sleep 1; nm-applet &)
 fi
 
+/home/tanya/battery-alert.sh &
+
 /usr/bin/redshift-gtk &
 
 /usr/bin/autocutsel -fork & /usr/bin/autocutsel -selection PRIMARY -fork &
