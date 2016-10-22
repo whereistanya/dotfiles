@@ -46,7 +46,7 @@ main = do
         }
         `additionalKeys`
         [ ((0, xK_F7), spawn "/usr/bin/gnome-screensaver-command -a")
-        , ((0, xK_F8), spawn "/usr/bin/chromium-browser")
+        , ((0, xK_F8), spawn "/usr/bin/google-chrome-stable")
         -- Map volume control keys. Uses https://github.com/bchurchill/xmonad-pulsevolume
         , ((0, 0x1008FF12), spawn "/home/tanya/pulse-volume.sh toggle")
         , ((0, 0x1008FF13), spawn "/home/tanya/pulse-volume.sh increase")
