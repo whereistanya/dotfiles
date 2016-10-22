@@ -8,7 +8,7 @@ Configs for an xmonad setup on Ubuntu.
 * redshift-gtk: colour temperature adjuster. Mine's configured (.config/redshift.conf) to make the screen red in the evening, New York time.  
 * autocutset: keep the X clipboard and the cutbuffer in sync  
 * xbacklight: to map to the brightness buttons to change screen brightness  
-* acpi: to check the battery percentage
+* acpi: to check the battery percentage  
 
 Also grab pulsevolume.sh from https://github.com/bchurchill/xmonad-pulsevolume for making the audio buttons work.
 
@@ -16,7 +16,7 @@ Also grab pulsevolume.sh from https://github.com/bchurchill/xmonad-pulsevolume f
 
 /usr/share/xsessions/xmonad.desktop  
 ~/startxmonad  
-~/battery-alert.sh
+~/battery-alert.sh  
 ~/.xmonad/xmonad.hs  
 ~/.xmobarrc  
 ~/.config/redshift.conf  
