@@ -14,4 +14,6 @@ fi
 
 /usr/bin/gnome-sound-applet &
 
+/usr/bin/feh --randomize --bg-max /home/tanya/Pictures/background/ &
+
 exec xmonad
