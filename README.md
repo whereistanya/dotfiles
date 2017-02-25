@@ -9,6 +9,7 @@ Configs for an xmonad setup on Ubuntu.
 * autocutset: keep the X clipboard and the cutbuffer in sync  
 * xbacklight: to map to the brightness buttons to change screen brightness  
 * acpi: to check the battery percentage  
+* feh: to set background images  
 
 Also grab pulsevolume.sh from https://github.com/bchurchill/xmonad-pulsevolume for making the audio buttons work.
 
