@@ -22,3 +22,6 @@ set hlsearch       " highlight search results
 autocmd FileType go iab cnil if err != nil {
       \<CR>return err
       \<CR>}
+
+autocmd FileType go setlocal number
+autocmd FileType python setlocal number
