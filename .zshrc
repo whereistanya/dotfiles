@@ -16,6 +16,18 @@ setopt HIST_IGNORE_SPACE
 HISTSIZE=20000
 SAVEHIST=20000
 
+# Find and set branch name var if in git repository.
+function git_branch_name()
+{
+  branch=$(git symbolic-ref HEAD 2> /dev/null | awk 'BEGIN{FS="/"} {print $NF}')
+  if [[ $branch == "" ]];
+  then
+    :
+  else
+    echo '('$branch')'
+  fi
+}
+
 # %m is machine,   1j.%j is: if at least 1 bg job, print bg job count. The ()s
 # around the %j are literal ()s to be printed; the %j is the count
 # %3 is last three pieces of directory
